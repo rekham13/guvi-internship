@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 @import "../../node_modules/bootstrap/scss/functions";
 
+$primary: #0074d9;
 $input-btn-padding-y:.5rem;
 $input-btn-padding-x:1rem;
 $input-border-width: 2px;
-$input-focus-border-color:#2c82d7;
+$input-focus-border-color:$primary;
 $input-focus-box-shadow:0;
+$btn-focus-box-shadow:#0074d9;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 body{
@@ -30,6 +32,10 @@ body{
 };
 
 .font-size-2{
+    font-size: .8rem;
+}
+
+.font-size-3{
     font-size: .75rem;
 }
 
