@@ -2,6 +2,10 @@ import $ from "jquery";
 import "jquery-validation/dist/jquery.validate";
 import "jquery-validation/dist/additional-methods";
 
+$.validator.addMethod("lettersonlyWithSpace",function(a,b){
+    return this.optional(b)||/^[a-zA-Z ]*$/i.test(a)
+},"Letters only please");
+
 $.validator.addMethod("strongPassword",function(value,element){
     return this.optional(element)
     || value.length >=6
@@ -22,7 +26,7 @@ let signupValidator = $(".signup-form").validate({
     rules:{
         name:{
           required:true,
-          lettersonly:true
+          lettersonlyWithSpace:true
         },
         email:{
           required:true,
