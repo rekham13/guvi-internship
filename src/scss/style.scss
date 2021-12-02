@@ -10,6 +10,8 @@ $input-focus-border-color:$primary;
 $input-focus-box-shadow:0;
 $btn-focus-box-shadow:#0074d9;
 
+
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 body{
     font-family: 'Lato', sans-serif;
@@ -37,6 +39,10 @@ body{
 
 .font-size-3{
     font-size: .75rem;
+}
+
+.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus, .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
+    box-shadow: none;
 }
 
 // .field-error{
