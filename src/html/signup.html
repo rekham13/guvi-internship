@@ -19,17 +19,20 @@
                         <div class="mb-3 name-container">
                             <label for="name" class="form-label font-weight-700 font-size-2">Name *</label>
                             <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" />
-                            <div class="invalid-feedback"></div>
                         </div>
                         <div class="mb-3 email-container">
                             <label for="email" class="form-label font-weight-700 font-size-2">Email address *</label>
                             <input type="email" class="form-control" id="email" placeholder="Enter your email address" name="email">
-                            <div class="invalid-feedback"></div>
                         </div>
                         <div class="mb-3 password-container">
                             <label for="password" class="form-label font-weight-700 font-size-2">Password *</label>
-                            <input type="password" class="form-control" id="password" placeholder="Enter your password" name="password">
-                            <div class="invalid-feedback"></div>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="password" placeholder="Enter your password" name="password">
+                                <span class="input-group-text showPassword-btn">
+                                    <i class="bi bi-eye-slash-fill hide-password-icon" style="display:none"></i>
+                                    <i class="bi bi-eye-fill show-password-icon"></i>
+                                </span>
+                            </div>
                         </div>
                         <div class="mb-3 dob-container">
                             <label for="dob" class="form-label font-weight-700 font-size-2">Date of Birth</label>
@@ -39,7 +42,6 @@
                         <div class="mb-3 mobile-container">
                             <label for="mobile" class="form-label font-weight-700 font-size-2">Mobile Number *</label>
                             <input type="tel" class="form-control" id="mobile" placeholder="Enter your mobile number" name="mob">
-                            <div class="invalid-feedback"></div>
                         </div>
                         <button type="submit" class="btn btn-primary font-weight-700 font-size-1 mt-4">Create Account</button>
                     </form>
