@@ -77,4 +77,11 @@ let signupValidator = $(".signup-form").validate({
       $(element).removeClass("is-invalid");
       $(element).addClass("is-valid");
     },
+    errorPlacement:function(error, element) {
+      if(element.attr('id') === 'password'){
+        element.closest(".password-container").append(error);
+      }else{
+        element.closest('div').append(error);
+      }
+    }
   });

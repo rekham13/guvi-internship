@@ -1,6 +1,7 @@
 import $ from "jquery";
 
 import "./validations";
+import "./showPassword";
 
 let signupForm = $('.signup-form');
 
