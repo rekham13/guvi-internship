@@ -30,17 +30,7 @@ let signupValidator = $(".signup-form").validate({
         },
         email:{
           required:true,
-          email:true,
-        //   remote:{
-        //     url:`${basePath}/scripts/php/isEmailAvailable.php`,
-        //     type: "get",
-        //     data:{
-        //       email:function(){
-        //         return $("#email").val();
-        //       },
-        //       for:"signup"
-        //     }
-        //   }
+          email:true
         },
         password:{
           required:true,
